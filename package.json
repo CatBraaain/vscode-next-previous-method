@@ -1,0 +1,46 @@
+{
+    "name": "next-previous-method",
+    "version": "1.0.0",
+    "publisher": "CatBraaain",
+    "engines": {
+        "vscode": "^1.33.1"
+    },
+    "lisence": "MIT",
+    "displayName": "Next Previous Method",
+    "description": "This extension provides shortcut for `Next Method` and `Preview Method` navigation like Visual Studio. This will help you quickly move back and forth through the method.",
+    "main": "./src/extension.js",
+    "activationEvents": [
+        "next-previous-method.nextMethod",
+        "next-previous-method.previousMethod"
+    ],
+    "contributes": {
+        "commands": [
+            {
+                "command": "next-previous-method.nextMethod",
+                "title": "Next Method"
+            },
+            {
+                "command": "next-previous-method.previousMethod",
+                "title": "Previous Method"
+            }
+        ],
+        "keybindings": [
+            {
+                "command": "next-previous-method.nextMethod",
+                "key": "ctrl+down",
+                "mac": "cmd+down",
+                "when": "editorTextFocus"
+            },
+            {
+                "command": "next-previous-method.previousMethod",
+                "key": "ctrl+up",
+                "mac": "cmd+up",
+                "when": "editorTextFocus"
+            }
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/CatBraaain/vscode-next-previous-method.git"
+    }
+}
