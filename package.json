@@ -1,13 +1,13 @@
 {
     "name": "next-previous-method",
-    "version": "1.0.0",
+    "version": "1.0.1",
+    "displayName": "Go to Next/Previous Method",
+    "description": "This extension provides shortcut for `Next Method` and `Preview Method` navigation like Visual Studio. This will help you quickly move back and forth through the method.",
     "publisher": "CatBraaain",
     "engines": {
         "vscode": "^1.33.1"
     },
     "lisence": "MIT",
-    "displayName": "Next Previous Method",
-    "description": "This extension provides shortcut for `Next Method` and `Preview Method` navigation like Visual Studio. This will help you quickly move back and forth through the method.",
     "main": "./src/extension.js",
     "activationEvents": [
         "next-previous-method.nextMethod",
